@@ -26,7 +26,7 @@ associateRoutes.put("/associate/update/:id", listAssociateController.handler);
 associateRoutes.delete("/associate/delete/:id", deleteAssociateController.handler);
 
 associateRoutes.post("/associate/address/create", createAddressController.handler);
-associateRoutes.get("/associate/address/list", listAssociateAddressController.handler);
-associateRoutes.delete("/associate/address/delete", deleteAssociateAddressController.handler);
+associateRoutes.get("/associate/address/list/:associate_id", listAssociateAddressController.handler);
+associateRoutes.delete("/associate/address/delete/:id", deleteAssociateAddressController.handler);
 
 export { associateRoutes };

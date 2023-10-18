@@ -1,0 +1,61 @@
+POST http://localhost:4000/associate/create
+content-type: application/json
+
+{
+    "name": "sample",
+    "email": "sample@example.com",
+    "cnpj": "1234567890",
+    "phone": "1234567890",
+    "cellphone": "1234567890",
+    "responsible_clinic": "John Doe",
+    "responsible_finance": "Jane Smith",
+    "category": "Category",
+    "password": "password"
+}
+
+### 
+GET http://localhost:4000/list/associates
+
+###
+GET http://localhost:4000/list/associate/{id} 
+
+
+###
+PUT http://localhost:4000/associate/update/{id} 
+content-type: application/json
+
+{
+    "name": "updated_name",
+    "email": "updated_email@example.com",
+    "cnpj": "updated_cnpj",
+    "phone": "updated_phone",
+    "cellphone": "updated_cellphone",
+    "responsible_clinic": "Updated Clinic",
+    "responsible_finance": "Updated Finance",
+    "category": "Updated Category",
+    "password": "updated_password"
+}
+
+###
+DELETE http://localhost:4000/associate/delete/{id} 
+
+###
+POST http://localhost:4000/associate/address/create
+content-type: application/json
+
+{
+    "associate_id": "97f53584-9db9-47eb-a67b-32aac1814250",
+    "cep": "12345678",
+    "address": "Sample Address",
+    "number": "123",
+    "complement": "Apt 123",
+    "neighborhood": "Sample Neighborhood"
+}
+
+
+###
+GET http://localhost:4000/associate/address/list/{associate_id}
+
+
+###
+DELETE http://localhost:4000/associate/address/delete/{id}
