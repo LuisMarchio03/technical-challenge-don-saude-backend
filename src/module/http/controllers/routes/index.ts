@@ -13,5 +13,6 @@ associateRoutes.post("/associate/create", createController.handler);
 associateRoutes.get("/list/associates", listAssociatesController.handler);
 associateRoutes.get("/list/associate/:id", listAssociateController.handler);
 associateRoutes.put("/associate/update/:id", listAssociateController.handler);
+associateRoutes.delete("/associate/delete/:id", listAssociateController.handler);
 
 export { associateRoutes };
