@@ -2,7 +2,7 @@ import { Request, Response } from 'express'
 
 import { makeDeleteAssociateUseCase } from '../../use-cases/factories/make-delete-associate-use-case'
 
-export class ListAssociateController {
+export class DeleteAssociateController {
 
   async handler(req: Request, res: Response) {
     try {
