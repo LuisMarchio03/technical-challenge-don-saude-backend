@@ -1,0 +1,39 @@
+{
+  "name": "don-saude-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify --exit-child src/server.ts",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.1",
+    "@types/cors": "^2.8.15",
+    "@types/supertest": "^2.0.14",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^5.39.0",
+    "eslint": "^8.24.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "prisma": "^5.4.2",
+    "typescript": "^5.2.2",
+    "vitest": "^0.23.4"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.4.2",
+    "@types/express": "^4.17.20",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "date-fns": "^2.29.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "supertest": "^6.3.3",
+    "ts-node-dev": "^2.0.0",
+    "zod": "^3.22.4"
+  }
+}
