@@ -1,6 +1,6 @@
 import { Prisma, Associate } from '@prisma/client'
 
-interface AssociateCreateInput {
+interface Input {
   name: string
   email: string
   cnpj: string
@@ -8,19 +8,13 @@ interface AssociateCreateInput {
   cellphone: string
   responsible_clinic: string
   responsible_finance: string
+  category: string
   password: string
 }
 
-interface AssociateUpdateInput {
-  name: string
-  email: string
-  cnpj: string
-  phone: string
-  cellphone: string
-  responsible_clinic: string
-  responsible_finance: string
-  password: string
-}
+interface AssociateCreateInput extends Input {}
+
+interface AssociateUpdateInput extends Input  {}
 
 export interface AssociatesRepository {
   create(data: AssociateCreateInput): Promise<Associate>

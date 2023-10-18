@@ -20,7 +20,25 @@ model Associate {
   cellphone           String
   responsible_clinic  String
   responsible_finance String
+  category            String
   password            String
+
+  createdAt        DateTime           @default(now())
+  updatedAt        DateTime           @updatedAt
+  AssociateAddress AssociateAddress[]
+}
+
+model AssociateAddress {
+  id String @id @default(uuid())
+
+  associate_id String
+  associate    Associate @relation(fields: [associate_id], references: [id])
+
+  cep          String
+  address      String
+  number       String
+  complement   String
+  neighborhood String
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt

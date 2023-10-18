@@ -15,6 +15,7 @@ export class CreateController {
         cellphone: z.string(),
         responsible_clinic: z.string(),
         responsible_finance: z.string(),
+        category: z.string(),
         password: z.string(),
       })
     
@@ -26,6 +27,7 @@ export class CreateController {
         cellphone,
         responsible_clinic,
         responsible_finance,
+        category,
         password,
        } = createBodySchema.parse(req.body)
     
@@ -39,6 +41,7 @@ export class CreateController {
         cellphone,
         responsible_clinic,
         responsible_finance,
+        category,
         password,
       })
     

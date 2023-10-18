@@ -10,7 +10,8 @@ interface Associate {
   cellphone: string
   responsible_clinic: string
   responsible_finance: string
-  password: string
+  password: string,
+  category: string,
   createdAt: Date
   updatedAt: Date
 }
@@ -31,6 +32,7 @@ export class InMemoryAssociatesRepository implements AssociatesRepository {
       cellphone: data.cellphone,
       cnpj: data.cnpj,
       phone: data.phone,
+      category: data.category,
       responsible_clinic: data.responsible_clinic,
       responsible_finance: data.responsible_finance,
       createdAt: new Date(),

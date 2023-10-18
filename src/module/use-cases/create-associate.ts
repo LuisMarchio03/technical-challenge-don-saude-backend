@@ -8,6 +8,7 @@ interface CreateAssociateUseCaseRequest {
   cellphone: string
   responsible_clinic: string
   responsible_finance: string
+  category: string
   password: string
 }
 
@@ -19,6 +20,7 @@ interface CreateAssociateUseCaseResponse {
   cellphone: string
   responsible_clinic: string
   responsible_finance: string
+  category: string
   password: string
 }
 
@@ -33,6 +35,7 @@ export class CreateAssociateUseCase {
     cellphone,
     responsible_clinic,
     responsible_finance,
+    category,
     password,
   }: CreateAssociateUseCaseRequest): Promise<CreateAssociateUseCaseResponse> {
     const associatesAlreadyExists = await this.AssociatesRepository.findByEmail(email)
@@ -49,6 +52,7 @@ export class CreateAssociateUseCase {
       cellphone,
       responsible_clinic,
       responsible_finance,
+      category,
       password,
     })
     return associate

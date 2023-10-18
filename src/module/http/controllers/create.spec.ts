@@ -32,6 +32,7 @@ describe('Create Associate (e2e)', () => {
         cellphone: "(64) 9 99991-8525",
         responsible_clinic: "any 01",
         responsible_finance: "any 02",
+        category: "any 03",
         password: "123456"
       })
 

@@ -22,6 +22,7 @@ describe('Create Associate Use Case', () => {
         phone: '(64) 9 9991-8525',
         responsible_clinic: 'any_responsible_clinic',
         responsible_finance: 'any_responsible_finance',
+        category: 'any_category',
     })
 
     expect(email).toEqual(expect.any(String))
@@ -38,6 +39,7 @@ describe('Create Associate Use Case', () => {
         phone: '(64) 9 9991-8525',
         responsible_clinic: 'any_responsible_clinic',
         responsible_finance: 'any_responsible_finance',
+        category: 'any_category',
     })
 
     expect(associate).toBeTruthy()
