@@ -1,8 +1,8 @@
 import { describe, it, expect, beforeEach } from 'vitest'
 
 import { ListAssociateAddressUseCase } from './list-associate-address'
-import { InMemoryAssociateAddressRepository } from '../repositories/in-memory/in-memory-associate-address-repository'
-import { InMemoryAssociatesRepository } from '../repositories/in-memory/in-memory-associates-repository'
+import { InMemoryAssociateAddressRepository } from '../../repositories/in-memory/in-memory-associate-address-repository'
+import { InMemoryAssociatesRepository } from '../../repositories/in-memory/in-memory-associates-repository'
     
 let sut: ListAssociateAddressUseCase
 let associateAddressRepository: InMemoryAssociateAddressRepository

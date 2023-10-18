@@ -1,4 +1,4 @@
-import { AssociatesAddressRepository } from '../repositories/associate-address-repository'
+import { AssociatesAddressRepository } from '../../repositories/associate-address-repository'
 
 export class DeleteAssociateAddressUseCase {
   constructor(private AssociatesAddressRepository: AssociatesAddressRepository) {}

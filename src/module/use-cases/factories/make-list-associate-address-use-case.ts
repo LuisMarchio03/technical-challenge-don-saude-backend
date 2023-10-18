@@ -1,4 +1,4 @@
-import { ListAssociateAddressUseCase } from '../list-associate-address'
+import { ListAssociateAddressUseCase } from '../associate-address/list-associate-address'
 import { PrismaAssociatesAddressRepository } from '../../repositories/prisma/prisma-associate-address'
 
 export function makeListAssociateAddressUseCase() {

@@ -1,4 +1,4 @@
-import { AssociatesRepository } from '../repositories/associates-repository'
+import { AssociatesRepository } from '../../repositories/associates-repository'
 
 interface UpdateAssociateUseCaseRequest {
   name: string

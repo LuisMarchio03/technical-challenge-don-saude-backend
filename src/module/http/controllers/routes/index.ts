@@ -1,11 +1,11 @@
 import { Router } from "express";
-import { CreateController } from "../create"
-import { ListAssociatesController } from "../list-associates"
-import { DeleteAssociateController } from "../delete";
-import { ListAssociateController } from "../list-associate";
-import { CreateAddressController } from "../create-address";
-import { ListAssociateAddressController } from "../list-associate-address";
-import { DeleteAssociateAddressController } from "../delete-address";
+import { CreateController } from "../associate/create"
+import { ListAssociatesController } from "../associate/list-associates"
+import { DeleteAssociateController } from "../associate/delete";
+import { ListAssociateController } from "../associate/list-associate";
+import { CreateAddressController } from "../associate-address/create-address";
+import { ListAssociateAddressController } from "../associate-address/list-associate-address";
+import { DeleteAssociateAddressController } from "../associate-address/delete-address";
 
 const associateRoutes = Router();
 

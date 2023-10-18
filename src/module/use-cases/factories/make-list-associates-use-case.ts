@@ -1,4 +1,4 @@
-import { ListAssociatesUseCase } from '../list-associates'
+import { ListAssociatesUseCase } from '../associate/list-associates'
 import { PrismaAssociatesRepository } from '../../repositories/prisma/prisma-associates-repository'
 
 export function makeListAssociatesUseCase() {

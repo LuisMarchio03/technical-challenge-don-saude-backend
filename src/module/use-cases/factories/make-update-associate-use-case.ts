@@ -1,4 +1,4 @@
-import { UpdateAssociateUseCase } from '../update-associate'
+import { UpdateAssociateUseCase } from '../associate/update-associate'
 import { PrismaAssociatesRepository } from '../../repositories/prisma/prisma-associates-repository'
 
 export function makeUpdateAssociateUseCase() {

@@ -1,5 +1,5 @@
 import { PrismaAssociatesRepository } from '../../repositories/prisma/prisma-associates-repository'
-import { DeleteAssociateUseCase } from '../delete-associate'
+import { DeleteAssociateUseCase } from '../associate/delete-associate'
 
 export function makeDeleteAssociateUseCase() {
   const repository = new PrismaAssociatesRepository()

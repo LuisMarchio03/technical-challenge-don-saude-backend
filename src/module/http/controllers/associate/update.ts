@@ -1,7 +1,7 @@
 import { Request, Response } from 'express'
 import z from 'zod'
 
-import { makeUpdateAssociateUseCase } from '../../use-cases/factories/make-update-associate-use-case' 
+import { makeUpdateAssociateUseCase } from '../../../use-cases/factories/make-update-associate-use-case' 
 
 export class UpdateController {
   async handler(req: Request, res: Response) {

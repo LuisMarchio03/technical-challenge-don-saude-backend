@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
 
-import { makeListAssociateUseCase } from '../../use-cases/factories/make-list-associate-use-case' 
+import { makeListAssociateUseCase } from '../../../use-cases/factories/make-list-associate-use-case' 
 
 export class ListAssociateController {
 

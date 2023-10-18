@@ -1,5 +1,5 @@
-import { prisma } from '../../lib/prisma'
-import { app } from '../../../app'
+import { prisma } from '../../../lib/prisma'
+import { app } from '../../../../app'
 import request from 'supertest'
 import { afterAll, beforeAll, describe, expect, it } from 'vitest'
 import { Associate } from '@prisma/client'

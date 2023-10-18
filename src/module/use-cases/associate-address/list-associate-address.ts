@@ -1,5 +1,5 @@
 import { AssociateAddress } from '@prisma/client'
-import { AssociatesAddressRepository } from '../repositories/associate-address-repository'
+import { AssociatesAddressRepository } from '../../repositories/associate-address-repository'
 
 export class ListAssociateAddressUseCase {
   constructor(private AssociatesAddressRepository: AssociatesAddressRepository) {}

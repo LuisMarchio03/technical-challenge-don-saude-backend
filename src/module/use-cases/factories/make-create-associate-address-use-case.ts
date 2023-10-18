@@ -1,4 +1,4 @@
-import { CreateAssociateAddressUseCase } from '../create-associate-address'
+import { CreateAssociateAddressUseCase } from '../associate-address/create-associate-address'
 import { PrismaAssociatesAddressRepository } from '../../repositories/prisma/prisma-associate-address'
 
 export function makeCreateAssociateAddressUseCase() {

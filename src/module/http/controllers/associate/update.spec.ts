@@ -1,9 +1,9 @@
-import { prisma } from '../../lib/prisma'
-import { app } from '../../../app'
+import { prisma } from '../../../lib/prisma'
+import { app } from '../../../../app'
 import request from 'supertest'
 import { afterAll, describe, expect, it } from 'vitest'
-import { CreateAssociateUseCase } from '../../use-cases/create-associate'
-import { PrismaAssociatesRepository } from '../../repositories/prisma/prisma-associates-repository'
+import { CreateAssociateUseCase } from '../../../use-cases/associate/create-associate'
+import { PrismaAssociatesRepository } from '../../../repositories/prisma/prisma-associates-repository'
 
 let repository = new PrismaAssociatesRepository()
 let createAssociateUseCase = new CreateAssociateUseCase(repository)

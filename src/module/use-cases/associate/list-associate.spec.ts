@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach } from 'vitest'
 
 import { ListAssociateUseCase } from './list-associate'
-import { InMemoryAssociatesRepository } from '../repositories/in-memory/in-memory-associates-repository'
+import { InMemoryAssociatesRepository } from '../../repositories/in-memory/in-memory-associates-repository'
 import { ListAssociatesUseCase } from './list-associates'
     
 let sut: ListAssociateUseCase

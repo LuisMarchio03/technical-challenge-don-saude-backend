@@ -1,7 +1,7 @@
 import { Request, Response } from 'express'
 import z from 'zod'
 
-import { makeCreateAssociateAddressUseCase } from '../../use-cases/factories/make-create-associate-address-use-case' 
+import { makeCreateAssociateAddressUseCase } from '../../../use-cases/factories/make-create-associate-address-use-case' 
 
 export class CreateAddressController {
   async handler(req: Request, res: Response) {

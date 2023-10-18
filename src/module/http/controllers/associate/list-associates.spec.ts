@@ -1,8 +1,7 @@
-import { prisma } from '../../lib/prisma'
-import { app } from '../../../app'
+import { prisma } from '../../../lib/prisma'
+import { app } from '../../../../app'
 import request from 'supertest'
 import { afterAll, describe, expect, it } from 'vitest'
-
 
 describe('List Associates (e2e)', () => {
   afterAll(async () => {

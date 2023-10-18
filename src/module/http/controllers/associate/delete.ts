@@ -1,6 +1,6 @@
 import { Request, Response } from 'express'
 
-import { makeDeleteAssociateUseCase } from '../../use-cases/factories/make-delete-associate-use-case'
+import { makeDeleteAssociateUseCase } from '../../../use-cases/factories/make-delete-associate-use-case'
 
 export class DeleteAssociateController {
 
