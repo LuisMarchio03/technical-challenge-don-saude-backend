@@ -19,7 +19,7 @@ interface AssociateUpdateInput extends Input  {}
 export interface AssociatesRepository {
   create(data: AssociateCreateInput): Promise<Associate>
   listAssociates(): Promise<Associate[]>
-  listAssociate(): Promise<Associate>
+  listAssociate(id: string): Promise<Associate>
   findByEmail(email: string): Promise<Associate>
   update(id: string, data: AssociateUpdateInput): Promise<void> 
   delete(id: string): Promise<void>

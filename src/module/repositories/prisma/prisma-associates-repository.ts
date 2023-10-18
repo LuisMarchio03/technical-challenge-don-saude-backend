@@ -18,8 +18,12 @@ export class PrismaAssociatesRepository implements AssociatesRepository {
   async listAssociates(): Promise<Associate[]> {
     return await prisma.associate.findMany()
   }
-  async listAssociate(): Promise<Associate> {
-    const associate = await prisma.associate.findFirst()
+  async listAssociate(id: string): Promise<Associate> {
+    const associate = await prisma.associate.findFirst({
+      where: {
+        id,
+      },
+    })
     return associate as Associate
   }
   async findByEmail(email: string): Promise<Associate> {

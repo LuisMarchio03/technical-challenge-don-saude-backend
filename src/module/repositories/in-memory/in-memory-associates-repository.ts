@@ -45,8 +45,8 @@ export class InMemoryAssociatesRepository implements AssociatesRepository {
   async listAssociates(): Promise<Associate[]> {
     return this.items
   }
-  async listAssociate(): Promise<Associate> {
-    const associate = this.items.find((associate) => associate.id === associate.id)
+  async listAssociate(id: string): Promise<Associate> {
+    const associate = this.items.find((associate) => associate.id === id)
     return associate as Associate
   }
   async findByEmail(email: string): Promise<Associate> {
