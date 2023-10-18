@@ -4,7 +4,6 @@ import z from 'zod'
 import { makeCreateAssociateUseCase } from '../../use-cases/factories/make-create-associate-use-case' 
 
 export class CreateController {
-
   async handler(req: Request, res: Response) {
     try {
       const createBodySchema = z.object({
@@ -31,9 +30,9 @@ export class CreateController {
         password,
        } = createBodySchema.parse(req.body)
     
-      const createGymUseCase = makeCreateAssociateUseCase()
+      const createAssociateUseCase = makeCreateAssociateUseCase()
     
-      await createGymUseCase.execute({
+      await createAssociateUseCase.execute({
         name,
         email,
         cnpj,
